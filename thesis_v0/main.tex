@@ -1,0 +1,61 @@
+\documentclass{brownthesis}
+\usepackage{color}
+\definecolor{AliGray}{gray}{0.25}
+\usepackage[pdftex,                %
+    bookmarks         = true,%     % Signets
+    bookmarksnumbered = true,%     % Signets num�rot�s
+    pdfpagemode       = None,%     % Signets/vignettes ferm� � l'ouverture
+    pdfstartview      = FitH,%     % La page prend toute la largeur
+    pdfpagelayout     = SinglePage, % Vue par page
+    % Pour l'impression
+    linkcolor = black, anchorcolor = black, citecolor = AliGray, menucolor = red, urlcolor = magenta,
+    %linkcolor = black, anchorcolor = black, citecolor = black, menucolor = black, urlcolor = magenta,
+    pdfborder = {0 0 0}%   % Style de bordure : ici, pas de bordure
+    ]{hyperref}%                   % Utilisation de HyperTeX
+\usepackage{natbib}
+\bibliographystyle{apalike}
+
+\usepackage[footnotesize,bf]{caption}  % Reduces caption font sizes
+
+
+
+
+\begin{document}
+\title{Structural Representations in Action Recognition}
+\author{Ali Bilgin Arslan}
+\degrees{B.~S., Istanbul Bilgi University, 2008\\
+Sc.~M., Brown University, 2011}
+\principaladvisor{Thomas Serre}
+\reader{William Warren}
+\reader[(Department of Neuroscience)]{David Sheinberg}
+     %\dean{The Man}
+     \abstract{What an abstract!}
+     \abstractpage
+     \beforepreface
+     \prefacesection{Vita}
+     It all started in a little log cabin ...
+     \prefacesection{Preface}
+     This thesis tells you all you need to know about...
+     \prefacesection{Acknowledgements}
+     I would like to thank the academy...
+     \afterpreface
+
+    \chapter{Introduction}
+       \input{chapters/introduction}
+
+    \chapter{Algorithm}
+       \input{chapters/algorithm}
+
+    \chapter{Experiments}
+       \input{chapters/experiment1}
+       \input{chapters/experiment2}   
+
+     \chapter{Conclusions}
+
+
+     \appendix
+     \chapter{A Long Proof}
+     ...
+     \bibliographystyle{plain}
+     \bibliography{mybib}
+     \end{document}
